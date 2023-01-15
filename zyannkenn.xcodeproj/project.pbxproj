@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		721C96012973A7AA0075C537 /* SenrekiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C96002973A7AA0075C537 /* SenrekiViewController.swift */; };
+		727EAD972973D94600BBEED9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 727EAD962973D94600BBEED9 /* GoogleService-Info.plist */; };
+		72D18E36293322BF000C05CB /* senreki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D18E35293322BF000C05CB /* senreki.swift */; };
+		72D18E3829332900000C05CB /* janken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D18E3729332900000C05CB /* janken.swift */; };
 		72E1D485293097E500B49DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1D484293097E500B49DBC /* AppDelegate.swift */; };
 		72E1D487293097E500B49DBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1D486293097E500B49DBC /* SceneDelegate.swift */; };
 		72E1D489293097E500B49DBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1D488293097E500B49DBC /* ViewController.swift */; };
 		72E1D48C293097E500B49DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E1D48A293097E500B49DBC /* Main.storyboard */; };
 		72E1D48E293097E700B49DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72E1D48D293097E700B49DBC /* Assets.xcassets */; };
 		72E1D491293097E700B49DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72E1D48F293097E700B49DBC /* LaunchScreen.storyboard */; };
+		72F10BD52971325000EAA624 /* senrekiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F10BD42971325000EAA624 /* senrekiTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		721C96002973A7AA0075C537 /* SenrekiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenrekiViewController.swift; sourceTree = "<group>"; };
+		727EAD962973D94600BBEED9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		72D18E35293322BF000C05CB /* senreki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = senreki.swift; sourceTree = "<group>"; };
+		72D18E3729332900000C05CB /* janken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = janken.swift; sourceTree = "<group>"; };
 		72E1D481293097E500B49DBC /* zyannkenn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zyannkenn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E1D484293097E500B49DBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72E1D486293097E500B49DBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,7 @@
 		72E1D48D293097E700B49DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72E1D490293097E700B49DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72E1D492293097E700B49DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72F10BD42971325000EAA624 /* senrekiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = senrekiTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +66,18 @@
 		72E1D483293097E500B49DBC /* zyannkenn */ = {
 			isa = PBXGroup;
 			children = (
+				727EAD962973D94600BBEED9 /* GoogleService-Info.plist */,
 				72E1D484293097E500B49DBC /* AppDelegate.swift */,
 				72E1D486293097E500B49DBC /* SceneDelegate.swift */,
 				72E1D488293097E500B49DBC /* ViewController.swift */,
+				721C96002973A7AA0075C537 /* SenrekiViewController.swift */,
 				72E1D48A293097E500B49DBC /* Main.storyboard */,
 				72E1D48D293097E700B49DBC /* Assets.xcassets */,
 				72E1D48F293097E700B49DBC /* LaunchScreen.storyboard */,
 				72E1D492293097E700B49DBC /* Info.plist */,
+				72D18E35293322BF000C05CB /* senreki.swift */,
+				72D18E3729332900000C05CB /* janken.swift */,
+				72F10BD42971325000EAA624 /* senrekiTableViewController.swift */,
 			);
 			path = zyannkenn;
 			sourceTree = "<group>";
@@ -83,6 +98,8 @@
 			dependencies = (
 			);
 			name = zyannkenn;
+			packageProductDependencies = (
+			);
 			productName = zyannkenn;
 			productReference = 72E1D481293097E500B49DBC /* zyannkenn.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +128,8 @@
 				Base,
 			);
 			mainGroup = 72E1D478293097E500B49DBC;
+			packageReferences = (
+			);
 			productRefGroup = 72E1D482293097E500B49DBC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72E1D491293097E700B49DBC /* LaunchScreen.storyboard in Resources */,
+				727EAD972973D94600BBEED9 /* GoogleService-Info.plist in Resources */,
 				72E1D48E293097E700B49DBC /* Assets.xcassets in Resources */,
 				72E1D48C293097E500B49DBC /* Main.storyboard in Resources */,
 			);
@@ -140,7 +160,11 @@
 			files = (
 				72E1D489293097E500B49DBC /* ViewController.swift in Sources */,
 				72E1D485293097E500B49DBC /* AppDelegate.swift in Sources */,
+				72D18E36293322BF000C05CB /* senreki.swift in Sources */,
 				72E1D487293097E500B49DBC /* SceneDelegate.swift in Sources */,
+				72D18E3829332900000C05CB /* janken.swift in Sources */,
+				721C96012973A7AA0075C537 /* SenrekiViewController.swift in Sources */,
+				72F10BD52971325000EAA624 /* senrekiTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
