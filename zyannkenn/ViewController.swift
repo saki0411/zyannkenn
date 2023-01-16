@@ -164,12 +164,11 @@ class ViewController: UIViewController {
         }
         
     }
-    @IBAction func toAddView() {
-        let nextView = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SenrekiViewController
-       
-        nextView.syouhai = syouhai
-        self.navigationController?.pushViewController(nextView, animated: true)
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toNext" {
+            let nextView = segue.destination as! SenrekiViewController
+            nextView.syouhai = syouhai
+        }
     }
     
 }
