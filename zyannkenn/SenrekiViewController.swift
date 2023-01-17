@@ -12,6 +12,8 @@ class SenrekiViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var TableView: UITableView!
 
     var syouhai : Int = 0
+   var scoreArray = [String]()
+    
     
     
     
@@ -19,7 +21,7 @@ class SenrekiViewController: UIViewController, UITableViewDelegate, UITableViewD
         super.viewDidLoad()
        // print(syouhai)
        label.text = String(syouhai)
-        
+       
       
 
         // Do any additional setup after loading the view.
@@ -27,6 +29,7 @@ class SenrekiViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewWillAppear(_ animated: Bool) {
           super.viewWillAppear(animated)
         TableView.reloadData()
+        
         }
     
     
@@ -41,14 +44,12 @@ class SenrekiViewController: UIViewController, UITableViewDelegate, UITableViewD
     */
     
     
-   func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-       return 1
-    }
+ 
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+// セルの数
         // #warning Incomplete implementation, return the number of rows
-        return syouhai
+        return scoreArray.count
         
     }
 
@@ -75,7 +76,7 @@ class SenrekiViewController: UIViewController, UITableViewDelegate, UITableViewD
         // セルを取得する
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "katicell", for: indexPath)
         
-        if syouhai == 1{
+      /*  if syouhai == 1{
             cell.textLabel!.text = "あいこ"
                         }
         if syouhai == 2{
@@ -84,8 +85,10 @@ class SenrekiViewController: UIViewController, UITableViewDelegate, UITableViewD
         if syouhai == 3{
             cell.textLabel!.text = "勝ち"
         }
+       */
+        cell.textLabel?.text = scoreArray[indexPath.row]
         // セルに表示する値を設定する
-        print(syouhai)
+        print(scoreArray)
         return cell
     }
 }

@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     var index: Int = 0
     var aite: Int!
     var syouhai: Int = 0
+    var scoreArray = [String]()
     
     
     
@@ -42,33 +43,43 @@ class ViewController: UIViewController {
         if aite == 1 && index == 1{
             Label.text = "あいこ！"
             syouhai = 1
+            scoreArray.append("あいこ")
+            
         }else if aite == 2 && index == 1{
             Label.text = "まけ！"
+            scoreArray.append("まけ")
             syouhai = 2
         }else if aite == 3 && index == 1{
             Label.text = "かち！"
+            scoreArray.append("かち")
             syouhai = 3
         }
         
         if aite == 1 && index == 2{
             Label.text = "かち！"
+            scoreArray.append("かち")
             syouhai = 3
         }else if aite == 2 && index == 2{
             Label.text = "あいこ！"
+            scoreArray.append("あいこ")
             syouhai = 1
         }else if aite == 3 && index == 2{
             Label.text = "まけ！"
+            scoreArray.append("まけ")
             syouhai = 2
         }
         
         if aite == 1 && index == 3{
             Label.text = "まけ！"
+            scoreArray.append("まけ")
             syouhai = 2
         }else if aite == 2 && index == 3{
             Label.text = "かち！"
+            scoreArray.append("かち")
             syouhai = 3
         }else if aite == 3 && index == 3{
             Label.text = "あいこ！"
+            scoreArray.append("あいこ")
             syouhai = 1
         }
     }
@@ -86,34 +97,43 @@ class ViewController: UIViewController {
         
         if aite == 1 && index == 1{
             Label.text = "あいこ！"
+            scoreArray.append("あいこ")
             syouhai = 1
         }else if aite == 2 && index == 1{
             Label.text = "まけ！"
+            scoreArray.append("まけ")
             syouhai = 2
         }else if aite == 3 && index == 1{
             Label.text = "かち！"
+            scoreArray.append("かち")
             syouhai = 3
         }
         
         if aite == 1 && index == 2{
             Label.text = "かち！"
+            scoreArray.append("かち")
             syouhai = 3
         }else if aite == 2 && index == 2{
             Label.text = "あいこ！"
+            scoreArray.append("あいこ")
             syouhai = 1
         }else if aite == 3 && index == 2{
             Label.text = "まけ！"
+            scoreArray.append("まけ")
             syouhai = 2
         }
         
         if aite == 1 && index == 3{
             Label.text = "まけ！"
+            scoreArray.append("まけ")
             syouhai = 2
         }else if aite == 2 && index == 3{
             Label.text = "かち！"
+            scoreArray.append("かち")
             syouhai = 3
         }else if aite == 3 && index == 3{
             Label.text = "あいこ！"
+            scoreArray.append("あいこ")
             syouhai = 1
         }
     }
@@ -132,34 +152,43 @@ class ViewController: UIViewController {
         
         if aite == 1 && index == 1{
             Label.text = "あいこ！"
+            scoreArray.append("あいこ")
             syouhai = 1
         }else if aite == 2 && index == 1{
             Label.text = "まけ！"
+            scoreArray.append("まけ")
             syouhai = 2
         }else if aite == 3 && index == 1{
             Label.text = "かち！"
+            scoreArray.append("かち")
             syouhai = 3
         }
         
         if aite == 1 && index == 2{
             Label.text = "かち！"
+            scoreArray.append("かち")
             syouhai = 3
         }else if aite == 2 && index == 2{
             Label.text = "あいこ！"
+            scoreArray.append("あいこ")
             syouhai = 1
         }else if aite == 3 && index == 2{
             Label.text = "まけ！"
+            scoreArray.append("まけ")
             syouhai = 2
         }
         
         if aite == 1 && index == 3{
             Label.text = "まけ！"
+            scoreArray.append("まけ")
             syouhai = 2
         }else if aite == 2 && index == 3{
             Label.text = "かち！"
+            scoreArray.append("かち")
             syouhai = 3
         }else if aite == 3 && index == 3{
             Label.text = "あいこ！"
+            scoreArray.append("あいこ")
             syouhai = 1
         }
         
@@ -168,6 +197,7 @@ class ViewController: UIViewController {
         if segue.identifier == "toNext" {
             let nextView = segue.destination as! SenrekiViewController
             nextView.syouhai = syouhai
+            nextView.scoreArray = scoreArray
         }
     }
     
