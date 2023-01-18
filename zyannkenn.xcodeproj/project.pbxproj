@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		721C96012973A7AA0075C537 /* SenrekiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C96002973A7AA0075C537 /* SenrekiViewController.swift */; };
 		727EAD972973D94600BBEED9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 727EAD962973D94600BBEED9 /* GoogleService-Info.plist */; };
+		72CCCAFC2977C9430067D1B3 /* finishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CCCAFB2977C9430067D1B3 /* finishViewController.swift */; };
+		72CCCAFE2977D0370067D1B3 /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CCCAFD2977D0370067D1B3 /* startViewController.swift */; };
 		72D18E36293322BF000C05CB /* senreki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D18E35293322BF000C05CB /* senreki.swift */; };
 		72D18E3829332900000C05CB /* janken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D18E3729332900000C05CB /* janken.swift */; };
 		72E1D485293097E500B49DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1D484293097E500B49DBC /* AppDelegate.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		721C96002973A7AA0075C537 /* SenrekiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenrekiViewController.swift; sourceTree = "<group>"; };
 		727EAD962973D94600BBEED9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		72CCCAFB2977C9430067D1B3 /* finishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finishViewController.swift; sourceTree = "<group>"; };
+		72CCCAFD2977D0370067D1B3 /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
 		72D18E35293322BF000C05CB /* senreki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = senreki.swift; sourceTree = "<group>"; };
 		72D18E3729332900000C05CB /* janken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = janken.swift; sourceTree = "<group>"; };
 		72E1D481293097E500B49DBC /* zyannkenn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zyannkenn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,8 @@
 				72D18E35293322BF000C05CB /* senreki.swift */,
 				72D18E3729332900000C05CB /* janken.swift */,
 				72F10BD42971325000EAA624 /* senrekiTableViewController.swift */,
+				72CCCAFB2977C9430067D1B3 /* finishViewController.swift */,
+				72CCCAFD2977D0370067D1B3 /* startViewController.swift */,
 			);
 			path = zyannkenn;
 			sourceTree = "<group>";
@@ -162,7 +168,9 @@
 				72E1D485293097E500B49DBC /* AppDelegate.swift in Sources */,
 				72D18E36293322BF000C05CB /* senreki.swift in Sources */,
 				72E1D487293097E500B49DBC /* SceneDelegate.swift in Sources */,
+				72CCCAFE2977D0370067D1B3 /* startViewController.swift in Sources */,
 				72D18E3829332900000C05CB /* janken.swift in Sources */,
+				72CCCAFC2977C9430067D1B3 /* finishViewController.swift in Sources */,
 				721C96012973A7AA0075C537 /* SenrekiViewController.swift in Sources */,
 				72F10BD52971325000EAA624 /* senrekiTableViewController.swift in Sources */,
 			);
