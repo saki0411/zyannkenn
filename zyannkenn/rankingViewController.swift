@@ -18,7 +18,7 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(seikaiArray)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -36,13 +36,15 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得する
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "rankingcell", for: indexPath)
-        cell.textLabel?.text = seikaiArray[indexPath.row]
-        
-       
-        
-       
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let label1 = cell.contentView.viewWithTag(1) as! UILabel
+              let label2 = cell.contentView.viewWithTag(2) as! UILabel
 
+       
+        label1.text = seikaiArray[indexPath.row]
+              label2.text = timeArray[indexPath.row]
+        print(seikaiArray)
+        print(timeArray)
         return cell
     }
     /*
