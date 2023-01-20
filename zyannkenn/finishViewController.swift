@@ -14,30 +14,43 @@ class finishViewController: UIViewController {
     @IBOutlet var timekekkaLabel: UILabel!
     
     
+    
     var seikai: Int = 0
     var count: Float = 0.0
+    var timeArray = [String]()
+    var seikaiArray = [String]()
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         seitoukaisuLabel.text = String(seikai)
         timekekkaLabel.text = String(format: "%.2f", count)
+        timeArray.append(String(count))
+        seikaiArray.append(String(seikai))
+        
         
         // Do any additional setup after loading the view.
     }
     @IBAction func modoru(){
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "toranking" {
+            let nextView = segue.destination as! rankingViewController
+            nextView.timeArray = timeArray
+            nextView.seikaiArray = seikaiArray
+        }
+        
+        
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
     }
-    */
-
 }

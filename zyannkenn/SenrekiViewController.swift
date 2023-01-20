@@ -54,24 +54,7 @@ class SenrekiViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
 
     
-    /*func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "katicell", for: indexPath)
-
-        // セルを取得する
-        if syouhai == 1{
-            cell.textLabel!.text = "あいこ"
-                        }
-        if syouhai == 2{
-            cell.textLabel!.text = "負け"
-                        }
-        if syouhai == 3{
-            cell.textLabel!.text = "勝ち"
-                        }
-        // セルに表示する値を設定する
-        print(syouhai)
-        return cell
-    }
-     */
+   
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // セルを取得する
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "katicell", for: indexPath)

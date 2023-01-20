@@ -11,6 +11,7 @@
 		727EAD972973D94600BBEED9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 727EAD962973D94600BBEED9 /* GoogleService-Info.plist */; };
 		72CCCAFC2977C9430067D1B3 /* finishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CCCAFB2977C9430067D1B3 /* finishViewController.swift */; };
 		72CCCAFE2977D0370067D1B3 /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CCCAFD2977D0370067D1B3 /* startViewController.swift */; };
+		72CCCB00297A77700067D1B3 /* rankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CCCAFF297A77700067D1B3 /* rankingViewController.swift */; };
 		72D18E36293322BF000C05CB /* senreki.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D18E35293322BF000C05CB /* senreki.swift */; };
 		72D18E3829332900000C05CB /* janken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D18E3729332900000C05CB /* janken.swift */; };
 		72E1D485293097E500B49DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E1D484293097E500B49DBC /* AppDelegate.swift */; };
@@ -27,6 +28,7 @@
 		727EAD962973D94600BBEED9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		72CCCAFB2977C9430067D1B3 /* finishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finishViewController.swift; sourceTree = "<group>"; };
 		72CCCAFD2977D0370067D1B3 /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
+		72CCCAFF297A77700067D1B3 /* rankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rankingViewController.swift; sourceTree = "<group>"; };
 		72D18E35293322BF000C05CB /* senreki.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = senreki.swift; sourceTree = "<group>"; };
 		72D18E3729332900000C05CB /* janken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = janken.swift; sourceTree = "<group>"; };
 		72E1D481293097E500B49DBC /* zyannkenn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zyannkenn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +86,7 @@
 				72F10BD42971325000EAA624 /* senrekiTableViewController.swift */,
 				72CCCAFB2977C9430067D1B3 /* finishViewController.swift */,
 				72CCCAFD2977D0370067D1B3 /* startViewController.swift */,
+				72CCCAFF297A77700067D1B3 /* rankingViewController.swift */,
 			);
 			path = zyannkenn;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72E1D489293097E500B49DBC /* ViewController.swift in Sources */,
+				72CCCB00297A77700067D1B3 /* rankingViewController.swift in Sources */,
 				72E1D485293097E500B49DBC /* AppDelegate.swift in Sources */,
 				72D18E36293322BF000C05CB /* senreki.swift in Sources */,
 				72E1D487293097E500B49DBC /* SceneDelegate.swift in Sources */,
