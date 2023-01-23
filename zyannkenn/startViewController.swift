@@ -12,6 +12,8 @@ class startViewController: UIViewController {
     
     var time = 4
         var timer = Timer()
+    var time2 = 4
+        var timer2 = Timer()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,17 @@ class startViewController: UIViewController {
                    }
                })
     }
+    @IBAction func start2(){
+        timer2 = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (timer) in
+                   self.time2 -= 1
+                   self.countLabel.text = String(self.time2)
+
+                   if self.time2 == 0 {
+                       self.performSegue(withIdentifier: "next2", sender: nil)
+                   }
+               })
+    }
+    
     /*
     // MARK: - Navigation
 

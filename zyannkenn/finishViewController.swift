@@ -25,7 +25,7 @@ class finishViewController: UIViewController {
         super.viewDidLoad()
         seitoukaisuLabel.text = String(seikai)
         timekekkaLabel.text = String(format: "%.2f", count)
-        timeArray.append(String(count))
+        timeArray.append(String(format: "%.2f", count ))
         seikaiArray.append(String(seikai))
         
         
@@ -39,6 +39,7 @@ class finishViewController: UIViewController {
             let nextView = segue.destination as! rankingViewController
             nextView.timeArray = timeArray
             nextView.seikaiArray = seikaiArray
+            
         }
         
         
