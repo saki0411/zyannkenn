@@ -30,7 +30,7 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="勝つ！">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="46"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="start" destination="rmx-te-5Tq" eventType="touchUpInside" id="gfH-J2-FHP"/>
@@ -43,7 +43,7 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="負ける！">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="46"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="start2" destination="rmx-te-5Tq" eventType="touchUpInside" id="Tk6-Je-t7L"/>
@@ -56,7 +56,7 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="遊び方">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="46"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bI1-q5-Uqh">
@@ -66,10 +66,10 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="結果">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="46"/>
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="46"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="kAL-UY-pHa" kind="show" id="eiv-6L-eg7"/>
+                                    <segue destination="kAL-UY-pHa" kind="show" identifier="toranking2" id="eiv-6L-eg7"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="じゃんけんロゴ" translatesAutoresizingMaskIntoConstraints="NO" id="nia-8p-lro">
@@ -259,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nml-QT-Y0p" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1714" y="645"/>
+            <point key="canvasLocation" x="2095" y="847"/>
         </scene>
         <!--Finish View Controller-->
         <scene sceneID="DE4-qr-L8w">
@@ -272,14 +272,14 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正答率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92w-A5-Yjo">
                                 <rect key="frame" x="130" y="181" width="130" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="かかった時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgA-m1-wPh">
                                 <rect key="frame" x="65" y="439" width="260" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -304,7 +304,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="戻る"/>
                                 <connections>
                                     <action selector="modoru" destination="3rv-II-TiX" eventType="touchUpInside" id="2Eb-gA-qtx"/>
-                                    <segue destination="rmx-te-5Tq" kind="show" id="7sw-x0-uy0"/>
+                                    <segue destination="rmx-te-5Tq" kind="show" identifier="tostart" id="7sw-x0-uy0"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -317,11 +317,12 @@
                         <outlet property="seitoukaisuLabel" destination="71S-z5-G6s" id="UKW-pW-BQ8"/>
                         <outlet property="timeLabel" destination="DgA-m1-wPh" id="AEo-Zz-g0Z"/>
                         <outlet property="timekekkaLabel" destination="vkz-4H-eUD" id="14z-jK-7l5"/>
+                        <segue destination="kAL-UY-pHa" kind="show" identifier="toranking" id="uRO-yH-yIy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BE4-n0-bDl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-246.15384615384613" y="747.86729857819898"/>
+            <point key="canvasLocation" x="-1225" y="1104"/>
         </scene>
         <!--Ranking View Controller-->
         <scene sceneID="geP-HC-MSw">
@@ -380,6 +381,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正答率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbs-bz-hbk">
+                                <rect key="frame" x="35" y="26" width="52" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58s-wO-eEe">
                                 <rect key="frame" x="307" y="20" width="59" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -389,13 +397,6 @@
                                     <action selector="sakuzyo" destination="kAL-UY-pHa" eventType="touchUpInside" id="ycD-Iq-SUV"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正答率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbs-bz-hbk">
-                                <rect key="frame" x="35" y="26" width="52" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ath-6Z-OqM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -409,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWP-pe-2cb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786" y="714"/>
+            <point key="canvasLocation" x="300" y="828"/>
         </scene>
         <!--Senreki Table View Controller-->
         <scene sceneID="N8h-Zo-iEJ">
@@ -489,8 +490,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="3Sg-NT-n6A"/>
-        <segue reference="pZ3-Sk-3jd"/>
+        <segue reference="VDh-jh-aGq"/>
+        <segue reference="eiv-6L-eg7"/>
+        <segue reference="OBu-Hf-87F"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="janken_choki" width="422" height="461"/>

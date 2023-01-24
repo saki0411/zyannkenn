@@ -35,10 +35,11 @@ class finishViewController: UIViewController {
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toranking" {
-            let nextView = segue.destination as! rankingViewController
+        if segue.identifier == "tostart" {
+            let nextView = segue.destination as! startViewController
             nextView.timeArray = timeArray
             nextView.seikaiArray = seikaiArray
+            
             
         }
         

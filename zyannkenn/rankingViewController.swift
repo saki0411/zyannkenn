@@ -24,12 +24,24 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      
         seikai2Array = saveData.object(forKey: "seikai") as! [String]
-        seikai2Array.append(contentsOf: seikaiArray)
         time2Array = saveData.object(forKey: "time") as! [String]
-        time2Array.append(contentsOf: timeArray)
-        // Do any additional setup after loading the view.
+
+        print(seikai2Array)
+        print(time2Array.last!)
+       
+        if time2Array.contains(timeArray) {
+            
+           
+            seikai2Array.append(contentsOf: seikaiArray)
+                        time2Array.append(contentsOf: timeArray)
+            print(seikai2Array)
+            print(time2Array.last!)
+            print(timeArray.last!)
+            // Do any additional setup after loading the view.
+        }else{
+            print("a")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -53,14 +65,16 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
               let label2 = cell.contentView.viewWithTag(2) as! UILabel
         
         
+        
+        
         saveData.set(seikai2Array, forKey: "seikai")
         saveData.set(time2Array, forKey: "time")
        
-        
+    
+        time2Array.sort()
         label1.text = seikai2Array[indexPath.row]
         label2.text = time2Array[indexPath.row]
-        print(seikai2Array)
-     
+       
         
         
         
@@ -91,7 +105,7 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         saveData.set(seikai2Array, forKey: "seikai")
         saveData.set(time2Array, forKey: "time")
         
-        print(seikai2Array)
+        
         TableView.reloadData()
     }
 }
