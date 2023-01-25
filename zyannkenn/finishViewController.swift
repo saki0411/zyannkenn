@@ -20,6 +20,10 @@ class finishViewController: UIViewController {
     var timeArray = [String]()
     var seikaiArray = [String]()
     
+    let date = Date()
+    let df = DateFormatter()
+    var dateArray = [String]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +32,8 @@ class finishViewController: UIViewController {
         timeArray.append(String(format: "%.2f", count ))
         seikaiArray.append(String(seikai))
         
+        df.dateFormat = "MM/dd/yyyy hh:mm"
+        dateArray.append(df.string(from: date))
         
         // Do any additional setup after loading the view.
     }
@@ -39,6 +45,7 @@ class finishViewController: UIViewController {
             let nextView = segue.destination as! startViewController
             nextView.timeArray = timeArray
             nextView.seikaiArray = seikaiArray
+            nextView.dateArray = dateArray
             
             
         }

@@ -13,6 +13,7 @@ class startViewController: UIViewController {
     
     var timeArray = [String]()
     var seikaiArray = [String]()
+    var dateArray = [String]()
     
     var time = 4
     var timer = Timer()
@@ -64,6 +65,7 @@ class startViewController: UIViewController {
             let nextView = segue.destination as! rankingViewController
             nextView.timeArray = timeArray
             nextView.seikaiArray = seikaiArray
+            nextView.dateArray = dateArray
             
     }
     
