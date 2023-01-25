@@ -32,15 +32,16 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
        
         if time2Array.contains(timeArray) {
             
-           
+            print("a")
+          
+        }else{
             seikai2Array.append(contentsOf: seikaiArray)
                         time2Array.append(contentsOf: timeArray)
             print(seikai2Array)
             print(time2Array.last!)
             print(timeArray.last!)
             // Do any additional setup after loading the view.
-        }else{
-            print("a")
+           
         }
     }
     
@@ -109,5 +110,4 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         TableView.reloadData()
     }
 }
-
 

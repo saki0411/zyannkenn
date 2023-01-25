@@ -26,10 +26,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxM-ME-rWO">
                                 <rect key="frame" x="26" y="238" width="348" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.6470588235294118" green="0.87450980392156863" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.62745098039215685" green="0.84705882352941175" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="勝つ！">
+                                <buttonConfiguration key="configuration" style="plain" title="かつ！">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="46"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -39,10 +39,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QH-Dk-wHT">
                                 <rect key="frame" x="26" y="369" width="348" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93725490196078431" green="0.38917680052790343" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.70196078431372544" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="負ける！">
+                                <buttonConfiguration key="configuration" style="plain" title="まける！">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="46"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -52,10 +52,10 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hGL-Qv-f98">
                                 <rect key="frame" x="26" y="504" width="348" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.37647058823529411" green="0.83977476261483619" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.37647058823529411" green="0.83921568627450982" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="遊び方">
+                                <buttonConfiguration key="configuration" style="plain" title="あそびかた">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="46"/>
                                 </buttonConfiguration>
                             </button>
@@ -65,7 +65,7 @@
                                 <color key="backgroundColor" red="0.99607843137254903" green="0.93333333333333335" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="結果">
+                                <buttonConfiguration key="configuration" style="plain" title="けっか">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="46"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -99,17 +99,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pW1-wQ-dGC">
-                                <rect key="frame" x="16" y="503" width="136" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button" image="janken_gu"/>
-                                <connections>
-                                    <action selector="gu" destination="BYZ-38-t0r" eventType="touchUpInside" id="vid-Dw-b70"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8S-HZ-oTf">
-                                <rect key="frame" x="238" y="503" width="136" height="112"/>
+                                <rect key="frame" x="209" y="501" width="181" height="149"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="janken_choki"/>
@@ -118,7 +109,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGM-Gd-GZB">
-                                <rect key="frame" x="127" y="633" width="136" height="112"/>
+                                <rect key="frame" x="97" y="648" width="197" height="162"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="janken_pa"/>
@@ -160,6 +151,15 @@
                                 <color key="textColor" red="1" green="0.28598628450000002" blue="0.37944250800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pW1-wQ-dGC">
+                                <rect key="frame" x="0.0" y="502" width="179" height="147"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="janken_gu"/>
+                                <connections>
+                                    <action selector="gu" destination="BYZ-38-t0r" eventType="touchUpInside" id="vid-Dw-b70"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -185,7 +185,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtU-D7-P8t">
-                                <rect key="frame" x="16" y="503" width="136" height="112"/>
+                                <rect key="frame" x="0.0" y="456" width="180" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="janken_gu"/>
@@ -193,17 +193,8 @@
                                     <action selector="gu" destination="np1-hK-61W" eventType="touchUpInside" id="xGg-dc-IAC"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxc-2M-mGV">
-                                <rect key="frame" x="238" y="503" width="136" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Button" image="janken_choki"/>
-                                <connections>
-                                    <action selector="tyoki" destination="np1-hK-61W" eventType="touchUpInside" id="BVM-RX-kyh"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXs-15-07X">
-                                <rect key="frame" x="127" y="633" width="136" height="112"/>
+                                <rect key="frame" x="104" y="629" width="202" height="166"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Button" image="janken_pa"/>
@@ -245,6 +236,15 @@
                                 <color key="textColor" red="1" green="0.28598628450000002" blue="0.37944250800000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxc-2M-mGV">
+                                <rect key="frame" x="198" y="448" width="189" height="156"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="janken_choki"/>
+                                <connections>
+                                    <action selector="tyoki" destination="np1-hK-61W" eventType="touchUpInside" id="BVM-RX-kyh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yPA-oL-nne"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -259,7 +259,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nml-QT-Y0p" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2095" y="847"/>
+            <point key="canvasLocation" x="48" y="746"/>
         </scene>
         <!--Finish View Controller-->
         <scene sceneID="DE4-qr-L8w">
@@ -322,7 +322,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BE4-n0-bDl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1225" y="1104"/>
+            <point key="canvasLocation" x="954" y="803"/>
         </scene>
         <!--Ranking View Controller-->
         <scene sceneID="geP-HC-MSw">
@@ -352,7 +352,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqQ-fa-fdo">
-                                                    <rect key="frame" x="250" y="21" width="157" height="21"/>
+                                                    <rect key="frame" x="140" y="21" width="157" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -374,13 +374,6 @@
                                     <navigationItem id="AGp-dS-ufY"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWX-fM-iQK">
-                                <rect key="frame" x="240" y="26" width="35" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="正答率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbs-bz-hbk">
                                 <rect key="frame" x="35" y="26" width="52" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -397,6 +390,13 @@
                                     <action selector="sakuzyo" destination="kAL-UY-pHa" eventType="touchUpInside" id="ycD-Iq-SUV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zWX-fM-iQK">
+                                <rect key="frame" x="132" y="26" width="35" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ath-6Z-OqM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -410,7 +410,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fWP-pe-2cb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="300" y="828"/>
+            <point key="canvasLocation" x="47.692307692307693" y="1465.8767772511849"/>
         </scene>
         <!--Senreki Table View Controller-->
         <scene sceneID="N8h-Zo-iEJ">
@@ -491,7 +491,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="VDh-jh-aGq"/>
-        <segue reference="eiv-6L-eg7"/>
+        <segue reference="uRO-yH-yIy"/>
         <segue reference="OBu-Hf-87F"/>
     </inferredMetricsTieBreakers>
     <resources>
