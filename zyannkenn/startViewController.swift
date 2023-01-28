@@ -20,6 +20,8 @@ class startViewController: UIViewController {
     var time2 = 4
     var timer2 = Timer()
     
+    var yozi: Int = 10
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -66,8 +68,13 @@ class startViewController: UIViewController {
             nextView.timeArray = timeArray
             nextView.seikaiArray = seikaiArray
             nextView.dateArray = dateArray
+        
             
     }
+        if segue.identifier == "toyozi" {
+            let nextView = segue.destination as! yoziViewController
+            nextView.yozi = yozi
+        }
     
     
     }

@@ -12,6 +12,8 @@ class finishViewController: UIViewController {
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var seitoukaisuLabel: UILabel!
     @IBOutlet var timekekkaLabel: UILabel!
+    @IBOutlet var yozizyukugoLabel: UILabel!
+    @IBOutlet var yoziLabel: UILabel!
     
     
     
@@ -24,6 +26,13 @@ class finishViewController: UIViewController {
     let df = DateFormatter()
     var dateArray = [String]()
     
+    var yoziArray = ["明鏡止水","一期一会","風林火山","因果応報","試行錯誤","反面教師","臥薪嘗胆","温故知新","七転八起","本末転倒"]
+    var yozirandom: Int = 10
+    
+    
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +43,12 @@ class finishViewController: UIViewController {
         
         df.dateFormat = "MM/dd/yyyy hh:mm"
         dateArray.append(df.string(from: date))
+        
+        if seikai == 10{
+            yoziLabel.text = "四字熟語獲得！"
+            yozirandom  = Int.random(in: 0...9)
+            yozizyukugoLabel.text = (yoziArray[yozirandom])
+        }
         
         // Do any additional setup after loading the view.
     }
@@ -46,7 +61,9 @@ class finishViewController: UIViewController {
             nextView.timeArray = timeArray
             nextView.seikaiArray = seikaiArray
             nextView.dateArray = dateArray
+            nextView.yozi = yozirandom
             
+    
             
         }
         

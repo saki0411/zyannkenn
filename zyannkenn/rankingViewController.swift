@@ -74,6 +74,11 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         let label3 = cell.contentView.viewWithTag(3) as! UILabel
         
         
+        if indexPath.row == 1{
+            cell.backgroundColor = UIColor(red: 255/255, green: 206/255, blue: 243/255, alpha: 1.0)
+        }else{
+            cell.backgroundColor = UIColor.clear
+        }
         
         
         saveData.set(seikai2Array, forKey: "seikai")
