@@ -63,7 +63,7 @@ class finishViewController: UIViewController {
             nextView.dateArray = dateArray
             nextView.yozi = yozirandom
             
-    
+            
             
         }
         

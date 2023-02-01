@@ -13,7 +13,7 @@ class makeViewController: UIViewController {
     @IBOutlet var Label: UILabel!
     @IBOutlet var MaruLabel: UILabel!
     
-  
+    
     
     var index: Int = 0
     var aite: Int!
@@ -34,7 +34,7 @@ class makeViewController: UIViewController {
         MaruLabel.text = ""
         // Do any additional setup after loading the view.
         
-       
+        
         if !timer.isValid{
             timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(self.up), userInfo: nil, repeats: true)
         }
@@ -48,7 +48,7 @@ class makeViewController: UIViewController {
         }
     }
     
-
+    
     @IBAction func hazimeru(){
         
         
@@ -56,7 +56,7 @@ class makeViewController: UIViewController {
     
     
     @IBAction func gu(){
-      
+        
         index = 1
         
         if aite == 1 && index == 1{
@@ -67,7 +67,7 @@ class makeViewController: UIViewController {
             kaisu += 1
             bubuPlayer.currentTime = 0
             bubuPlayer.play()
-           
+            
             
             
         }else if aite == 2 && index == 1{
@@ -79,7 +79,7 @@ class makeViewController: UIViewController {
             seikai += 1
             pinponPlayer.currentTime = 0
             pinponPlayer.play()
-           
+            
         }else if aite == 3 && index == 1{
             Label.text = "かち！"
             MaruLabel.text = "×"
@@ -93,26 +93,26 @@ class makeViewController: UIViewController {
         Thread.sleep(forTimeInterval: 0.1)
         
         aite = Int.random(in: 1...3)
-       
         
-      if aite == 1{
+        
+        if aite == 1{
             ImageView.image = UIImage(named: "janken_gu")
         }else if aite == 2{
             ImageView.image = UIImage(named: "janken_pa")
         }else{
             ImageView.image = UIImage(named: "janken_choki")
         }
-      
+        
         
         if kaisu == 10{
             self.performSegue(withIdentifier: "tothird", sender: nil)
         }
     }
     @IBAction func pa(){
-       
+        
         index = 2
         
-       
+        
         
         if aite == 1 && index == 2{
             Label.text = "かち！"
@@ -120,7 +120,7 @@ class makeViewController: UIViewController {
             scoreArray.append("かち")
             syouhai = 3
             kaisu += 1
-           
+            
             bubuPlayer.currentTime = 0
             bubuPlayer.play()
             
@@ -132,7 +132,7 @@ class makeViewController: UIViewController {
             kaisu += 1
             bubuPlayer.currentTime = 0
             bubuPlayer.play()
-          
+            
         }else if aite == 3 && index == 2{
             Label.text = "まけ！"
             MaruLabel.text = "◯"
@@ -145,15 +145,15 @@ class makeViewController: UIViewController {
             
         }
         Thread.sleep(forTimeInterval: 0.1)
-      
+        
         aite = Int.random(in: 1...3)
         if aite == 1{
-              ImageView.image = UIImage(named: "janken_gu")
-          }else if aite == 2{
-              ImageView.image = UIImage(named: "janken_pa")
-          }else{
-              ImageView.image = UIImage(named: "janken_choki")
-          }
+            ImageView.image = UIImage(named: "janken_gu")
+        }else if aite == 2{
+            ImageView.image = UIImage(named: "janken_pa")
+        }else{
+            ImageView.image = UIImage(named: "janken_choki")
+        }
         
         
         if kaisu == 10{
@@ -162,16 +162,16 @@ class makeViewController: UIViewController {
     }
     
     @IBAction func tyoki(){
-       
+        
         index = 3
         
-      
+        
         
         
         if aite == 1 && index == 3{
             Label.text = "まけ！"
             MaruLabel.text = "◯"
-           
+            
             scoreArray.append("まけ")
             syouhai = 2
             kaisu += 1
@@ -185,7 +185,7 @@ class makeViewController: UIViewController {
             scoreArray.append("かち")
             syouhai = 3
             kaisu += 1
-          
+            
             bubuPlayer.currentTime = 0
             bubuPlayer.play()
             
@@ -200,15 +200,15 @@ class makeViewController: UIViewController {
             
         }
         Thread.sleep(forTimeInterval: 0.1)
-       
+        
         aite = Int.random(in: 1...3)
         if aite == 1{
-              ImageView.image = UIImage(named: "janken_gu")
-          }else if aite == 2{
-              ImageView.image = UIImage(named: "janken_pa")
-          }else{
-              ImageView.image = UIImage(named: "janken_choki")
-          }
+            ImageView.image = UIImage(named: "janken_gu")
+        }else if aite == 2{
+            ImageView.image = UIImage(named: "janken_pa")
+        }else{
+            ImageView.image = UIImage(named: "janken_choki")
+        }
         
         
         
@@ -220,7 +220,7 @@ class makeViewController: UIViewController {
             }
         }
         
-       
+        
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -233,7 +233,7 @@ class makeViewController: UIViewController {
             let nextnextView = segue.destination as! finishViewController
             nextnextView.seikai = seikai
             nextnextView.count = count
-           
+            
         }
     }
     @objc func up(){
@@ -243,5 +243,5 @@ class makeViewController: UIViewController {
     
     
 }
-    
-  
+
+

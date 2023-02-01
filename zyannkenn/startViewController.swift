@@ -68,14 +68,15 @@ class startViewController: UIViewController {
             nextView.timeArray = timeArray
             nextView.seikaiArray = seikaiArray
             nextView.dateArray = dateArray
-        
             
-    }
+            
+        }
         if segue.identifier == "toyozi" {
             let nextView = segue.destination as! yoziViewController
             nextView.yozi = yozi
+            print(yozi)
         }
-    
-    
+        
+        
     }
 }
