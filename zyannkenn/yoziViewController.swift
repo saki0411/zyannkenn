@@ -30,8 +30,10 @@ class yoziViewController: UIViewController, UICollectionViewDelegate,UICollectio
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        yoziArray = saveData.object(forKey: "yozi") as! [String]
+        if saveData.object(forKey: "yozi") as? [String] != nil{
+            yoziArray = saveData.object(forKey: "yozi") as! [String]
+        }
+       
         if yozi != nil , yozi != 10 {
             yoziArray[yozi] = String(yozi)
             print(yoziArray)

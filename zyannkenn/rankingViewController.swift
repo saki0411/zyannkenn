@@ -46,11 +46,14 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         print(seikai2Array)
         print(time2Array)
         print(date2Array)
-        seikai2Array = saveData.object(forKey: "seikai") as! [String]
-        time2Array = saveData.object(forKey: "time") as! [String]
-        date2Array = saveData.object(forKey: "date") as! [String]
-        
-        
+        if saveData.object(forKey: "seikai") as? [String] != nil{
+            seikai2Array = saveData.object(forKey: "seikai") as! [String]
+            time2Array = saveData.object(forKey: "time") as! [String]
+            date2Array = saveData.object(forKey: "date") as! [String]
+            
+            
+        }
+       
         
         if time2Array.contains(timeArray) {
             
@@ -163,85 +166,86 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         print(zenbunumber)
         print(timeArray)
-      
+        
         if timeArray.isEmpty {
-          
-                   }else{
-                       time2 = timeArray[0]
-                       zenbunumber7 = zenbu2Array.first(where: { $0.contains([[time2]])})!
-                       zenbunumber6 = zenbu2Array.firstIndex(of: zenbunumber7) ?? 1
-
-
-                   
-                     
             
-        }
-     
-       
-         
-            if indexPath.row == zenbunumber6{
-                cell.contentView.backgroundColor = UIColor(red: 255/255, green: 206/255, blue: 243/255, alpha: 1.0)
-                print("c")
-            }else{
-                cell.contentView.backgroundColor =  UIColor.clear
-                print("DDD")
-            }
-           
-    
-          
-            
-            
-            label1.text = zenbu2Array[indexPath.row][0][0]
-            label2.text = zenbu2Array[indexPath.row][1][0]
-            label3.text = zenbu2Array[indexPath.row][2][0]
-            label4.text = zenbunumber4[indexPath.row]
+        }else{
+            time2 = timeArray[0]
+            zenbunumber7 = zenbu2Array.first(where: { $0.contains([[time2]])})!
+            zenbunumber6 = zenbu2Array.firstIndex(of: zenbunumber7) ?? 1
             
             
             
             
             
-            
-            
-            
-            saveData.set(seikai2Array, forKey: "seikai")
-            saveData.set(time2Array, forKey: "time")
-            saveData.set(date2Array, forKey: "date")
-            
-            
-            
-            return cell
         }
         
         
-        /*
-         // MARK: - Navigation
-         
-         // In a storyboard-based application, you will often want to do a little preparation before navigation
-         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
-         }
-         */
         
-        
-
-        @IBAction func sakuzyo(){
-            seikai2Array = saveData.object(forKey: "seikai") as! [String]
-            seikai2Array = [String]()
-            time2Array = saveData.object(forKey: "time") as! [String]
-            time2Array = [String]()
-            date2Array = saveData.object(forKey: "date") as! [String]
-            date2Array = [String]()
-            
-            saveData.set(seikai2Array, forKey: "seikai")
-            saveData.set(time2Array, forKey: "time")
-            saveData.set(date2Array, forKey: "date")
-            
-            
-            TableView.reloadData()
+        if indexPath.row == zenbunumber6{
+            cell.contentView.backgroundColor = UIColor(red: 255/255, green: 206/255, blue: 243/255, alpha: 1.0)
+            print("c")
+        }else{
+            cell.contentView.backgroundColor =  UIColor.clear
+            print("DDD")
         }
+        
+        
+        
+        
+        
+        label1.text = zenbu2Array[indexPath.row][0][0]
+        label2.text = zenbu2Array[indexPath.row][1][0]
+        label3.text = zenbu2Array[indexPath.row][2][0]
+        label4.text = zenbunumber4[indexPath.row]
+        
+        
+        
+        
+        
+        
+        
+        
+        saveData.set(seikai2Array, forKey: "seikai")
+        saveData.set(time2Array, forKey: "time")
+        saveData.set(date2Array, forKey: "date")
+        
+        
+        
+        return cell
     }
     
     
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
     
+    
+    
+    @IBAction func sakuzyo(){
+        seikai2Array = saveData.object(forKey: "seikai") as! [String]
+        seikai2Array = [String]()
+        time2Array = saveData.object(forKey: "time") as! [String]
+        time2Array = [String]()
+        date2Array = saveData.object(forKey: "date") as! [String]
+        date2Array = [String]()
+        
+        saveData.set(seikai2Array, forKey: "seikai")
+        saveData.set(time2Array, forKey: "time")
+        saveData.set(date2Array, forKey: "date")
+        
+        
+        TableView.reloadData()
+        
+    }
+}
+
+
+
 
