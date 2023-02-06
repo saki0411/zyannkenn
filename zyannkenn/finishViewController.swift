@@ -19,6 +19,7 @@ class finishViewController: UIViewController {
     
     var seikai: Int = 0
     var count: Float = 0.0
+    var count2 = String()
     var timeArray = [String]()
     var seikaiArray = [String]()
     
@@ -36,9 +37,15 @@ class finishViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if count >  10{
+            count2 = String(format: "%.2f", count)
+        }else{
+            count2 = "0" + String(format: "%.2f", count)
+        }
+      
         seitoukaisuLabel.text = String(seikai)
         timekekkaLabel.text = String(format: "%.2f", count)
-        timeArray.append(String(format: "%.2f", count ))
+        timeArray.append(count2)
         seikaiArray.append(String(seikai))
         
         df.dateFormat = "MM/dd/yyyy hh:mm"

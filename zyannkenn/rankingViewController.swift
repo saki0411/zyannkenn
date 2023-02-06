@@ -53,7 +53,7 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
             
             
         }
-       
+        
         
         if time2Array.contains(timeArray) {
             
@@ -126,12 +126,7 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         
     }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        TableView.reloadData()
-        
-        
-    }
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
