@@ -34,6 +34,7 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     var zenbunumber6 = Int()
     var zenbunumber7 =  [[String]]()
     var time2 = String()
+    var yozirandom: Int = 10
     
     
     var newValueIndex: Int?
@@ -237,8 +238,27 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         
         TableView.reloadData()
+        self.performSegue(withIdentifier: "tostart", sender: nil)
         
     }
+    @IBAction func modoru(){
+        self.performSegue(withIdentifier: "tostart", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "tostart" {
+            let nextView = segue.destination as! startViewController
+          
+            nextView.yozi = yozirandom
+            
+            
+            
+        }
+        
+        
+       
+    }
+    
 }
 
 
