@@ -98,7 +98,7 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
                 
                 zenbu2Array.append(contentsOf: [zenbuArray])
                 zenbuArray = []
-                print(zenbu)
+              
                 
                 zenbunumber += 1
                 zenbunumber2 += 1
@@ -106,7 +106,7 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
                 sectionnumber += 1
                 zenbunumber4.append(String(zenbunumber))
                 sectionTitle.append(String(sectionnumber + 1))
-                print(zenbunumber4)
+             
             }
             
             
@@ -117,13 +117,7 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         print(zenbu2Array)
         
         zenbu2Array.sort{$0[1][0] < $1[1][0]}
-        
-        /*    zenbu2Array.sort{$0[1] > $1[1]}
-         for i in 0 ..< 10{
-         let a = zenbu2Array[i][0]
-         let b = zenbu2Array[i][1]
-         }
-         */
+      
         
         
     }
@@ -248,7 +242,7 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "tostart" {
             let nextView = segue.destination as! startViewController
-          
+            
             nextView.yozi = yozirandom
             
             
@@ -256,7 +250,7 @@ class rankingViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
         
         
-       
+        
     }
     
 }

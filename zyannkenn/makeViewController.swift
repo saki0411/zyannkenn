@@ -60,53 +60,19 @@ class makeViewController: UIViewController {
         index = 1
         
         if aite == 1 && index == 1{
-            Label.text = "あいこ！"
-            MaruLabel.text = "×"
-            syouhai = 1
-            scoreArray.append("あいこ")
-            kaisu += 1
-            bubuPlayer.currentTime = 0
-            bubuPlayer.play()
+            aiko()
             
             
             
         }else if aite == 2 && index == 1{
-            Label.text = "まけ！"
-            MaruLabel.text = "◯"
-            scoreArray.append("まけ")
-            syouhai = 2
-            kaisu += 1
-            seikai += 1
-            pinponPlayer.currentTime = 0
-            pinponPlayer.play()
+            lose()
             
         }else if aite == 3 && index == 1{
-            Label.text = "かち！"
-            MaruLabel.text = "×"
-            scoreArray.append("かち")
-            syouhai = 3
-            kaisu += 1
-            
-            bubuPlayer.currentTime = 0
-            bubuPlayer.play()
+         win()
         }
-        Thread.sleep(forTimeInterval: 0.1)
+        randomaite()
         
-        aite = Int.random(in: 1...3)
-        
-        
-        if aite == 1{
-            ImageView.image = UIImage(named: "janken_gu")
-        }else if aite == 2{
-            ImageView.image = UIImage(named: "janken_pa")
-        }else{
-            ImageView.image = UIImage(named: "janken_choki")
-        }
-        
-        
-        if kaisu == 10{
-            self.performSegue(withIdentifier: "tothird", sender: nil)
-        }
+       
     }
     @IBAction func pa(){
         
@@ -115,50 +81,19 @@ class makeViewController: UIViewController {
         
         
         if aite == 1 && index == 2{
-            Label.text = "かち！"
-            MaruLabel.text = "×"
-            scoreArray.append("かち")
-            syouhai = 3
-            kaisu += 1
-            
-            bubuPlayer.currentTime = 0
-            bubuPlayer.play()
+           win()
             
         }else if aite == 2 && index == 2{
-            Label.text = "あいこ！"
-            MaruLabel.text = "×"
-            scoreArray.append("あいこ")
-            syouhai = 1
-            kaisu += 1
-            bubuPlayer.currentTime = 0
-            bubuPlayer.play()
+            aiko()
             
         }else if aite == 3 && index == 2{
-            Label.text = "まけ！"
-            MaruLabel.text = "◯"
-            scoreArray.append("まけ")
-            syouhai = 2
-            kaisu += 1
-            seikai += 1
-            pinponPlayer.currentTime = 0
-            pinponPlayer.play()
+            lose()
             
         }
-        Thread.sleep(forTimeInterval: 0.1)
-        
-        aite = Int.random(in: 1...3)
-        if aite == 1{
-            ImageView.image = UIImage(named: "janken_gu")
-        }else if aite == 2{
-            ImageView.image = UIImage(named: "janken_pa")
-        }else{
-            ImageView.image = UIImage(named: "janken_choki")
-        }
+    
+        randomaite()
         
         
-        if kaisu == 10{
-            self.performSegue(withIdentifier: "tothird", sender: nil)
-        }
     }
     
     @IBAction func tyoki(){
@@ -169,56 +104,20 @@ class makeViewController: UIViewController {
         
         
         if aite == 1 && index == 3{
-            Label.text = "まけ！"
-            MaruLabel.text = "◯"
-            
-            scoreArray.append("まけ")
-            syouhai = 2
-            kaisu += 1
-            seikai += 1
-            pinponPlayer.currentTime = 0
-            pinponPlayer.play()
-            
+           lose()
         }else if aite == 2 && index == 3{
-            Label.text = "かち！"
-            MaruLabel.text = "×"
-            scoreArray.append("かち")
-            syouhai = 3
-            kaisu += 1
-            
-            bubuPlayer.currentTime = 0
-            bubuPlayer.play()
+           win()
             
         }else if aite == 3 && index == 3{
-            Label.text = "あいこ！"
-            MaruLabel.text = "×"
-            scoreArray.append("あいこ")
-            syouhai = 1
-            kaisu += 1
-            bubuPlayer.currentTime = 0
-            bubuPlayer.play()
+           aiko()
             
         }
-        Thread.sleep(forTimeInterval: 0.1)
-        
-        aite = Int.random(in: 1...3)
-        if aite == 1{
-            ImageView.image = UIImage(named: "janken_gu")
-        }else if aite == 2{
-            ImageView.image = UIImage(named: "janken_pa")
-        }else{
-            ImageView.image = UIImage(named: "janken_choki")
-        }
+        randomaite()
         
         
         
         
-        if kaisu == 10{
-            self.performSegue(withIdentifier: "tothird", sender: nil)
-            if timer.isValid{
-                timer.invalidate()
-            }
-        }
+       
         
         
         
@@ -241,6 +140,61 @@ class makeViewController: UIViewController {
         
     }
     
+    
+    func win(){
+        Label.text = "かち！"
+        MaruLabel.text = "×"
+        scoreArray.append("かち")
+        syouhai = 3
+        kaisu += 1
+        
+        bubuPlayer.currentTime = 0
+        bubuPlayer.play()
+        
+    }
+    
+    func lose(){
+        Label.text = "まけ！"
+        MaruLabel.text = "◯"
+        scoreArray.append("まけ")
+        syouhai = 2
+        kaisu += 1
+        seikai += 1
+        pinponPlayer.currentTime = 0
+        pinponPlayer.play()
+    }
+    
+    func aiko(){
+        Label.text = "あいこ！"
+        MaruLabel.text = "×"
+        scoreArray.append("あいこ")
+        syouhai = 1
+        kaisu += 1
+        bubuPlayer.currentTime = 0
+        bubuPlayer.play()
+        
+    }
+   
+    func randomaite(){
+        Thread.sleep(forTimeInterval: 0.1)
+        
+        aite = Int.random(in: 1...3)
+        if aite == 1{
+            ImageView.image = UIImage(named: "janken_gu")
+        }else if aite == 2{
+            ImageView.image = UIImage(named: "janken_pa")
+        }else{
+            ImageView.image = UIImage(named: "janken_choki")
+        }
+        
+        if kaisu == 10{
+            self.performSegue(withIdentifier: "tothird", sender: nil)
+            if timer.isValid{
+                timer.invalidate()
+            }
+        }
+        
+    }
     
 }
 

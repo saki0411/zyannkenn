@@ -16,8 +16,7 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         // UIImageViewを作成し、画像を設定
         imageView.image = UIImage(named: kazu)
-        print(kazu)
-        print("a")
+        
         // Do any additional setup after loading the view.
     }
     

@@ -39,7 +39,7 @@ class yoziViewController: UIViewController, UICollectionViewDelegate,UICollectio
             print(yoziArray)
             print(yozi)
         }else{
-            print("B")
+           
         }
         
         
@@ -71,9 +71,9 @@ class yoziViewController: UIViewController, UICollectionViewDelegate,UICollectio
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("a")
+     
         if segue.identifier == "tobig" {
-            print("b")
+         
             let nextView = segue.destination as! DetailViewController
             nextView.kazu = tappedImage
         }
